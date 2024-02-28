@@ -1,0 +1,15 @@
+{
+  "processors": [
+    "stylelint-processor-styled-components"
+  ],
+  "plugins": [
+    "stylelint-no-px"
+  ],
+  "extends": [
+    "stylelint-config-recommended",
+    "stylelint-config-styled-components"
+  ],
+  "rules": {
+    "meowtec/no-px": [true, { "ignore": ["1px"] }]
+  }
+}
