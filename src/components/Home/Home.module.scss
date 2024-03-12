@@ -1,55 +1,36 @@
 @use '../../styles/constants/colours.scss' as colour;
 
-.home {
- h3 {
-  margin-top: 1em;
- }
+.button {
+  background-color: colour.$blue;
+  margin-top: 1.25rem;
+  padding: 0.75rem 0.625rem;
 }
 
 .welcome {
- width: 50vw;
+  width: 50vw;
 
- h1 {
-  margin-bottom: 3rem;
- }
+  h1 {
+    margin-bottom: 3rem;
+  }
 
- p {
-  margin-bottom: 2rem;
- }
+  p {
+    margin-bottom: 2rem;
+  }
 }
 
 .answer-inputs {
- width: 70vw;
- display: grid;
- grid-template-columns: repeat(5, 1fr);
- gap: 1em;
- margin-bottom: 2em;
+  max-width: 70ch;
+  margin-bottom: 2em;
 
- input {
-  display: block;
-  width: 100%;
-  padding: 10px;
-
-  &.correct {
-   border: solid 5px colour.$green-dark;
+  input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    max-width: 10em;
   }
- }
-}
-
-.answer-note {
- width: 50vw;
- font-size: 0.8em;
- color: #999;
- margin-bottom: 1em;
 }
 
 .green {
- color: colour.$green-dark;
- font-weight: bold;
-}
-
-.home-shutdown {
- padding: 1em;
- background: colour.$orange;
- cursor: pointer;
+  color: colour.$green-dark;
+  font-weight: bold;
 }
