@@ -5,9 +5,9 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Home from "./Home";
-import rooms from "./rooms";
 import { RootLayout } from "./RootLayout";
 import { Success } from "./Success";
+import { Ooops } from "./Ooops";
 
 export function App() {
   const router = createBrowserRouter(
@@ -16,9 +16,7 @@ export function App() {
         <>
           <Route index element={<Home />} />
           <Route path="/success" element={<Success />} />
-          {rooms.map((room) => {
-            return <Route path={room.path} element={<room.component />} />;
-          })}
+          <Route path="/oops" element={<Ooops />} />
         </>
       </Route>
     )
