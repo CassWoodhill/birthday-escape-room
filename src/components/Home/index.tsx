@@ -38,7 +38,7 @@ export function Home() {
             }}
             value={inputValue}
           />
-          <button className={css['button']} type="submit">Enter code</button>
+          <button className={css['button']} type="submit">Submit code</button>
         </form>
       </div>
     </div>

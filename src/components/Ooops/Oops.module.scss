@@ -1,10 +1,15 @@
 @use '../../styles/mixins/shadows.scss' as mix;
 @use '../../styles/constants/colours.scss' as colour;
 
-.success {
+.oops {
   h1 {
-    @include mix.text-shadow(colour.$green-dark, 1px);
-    color: colour.$green;
+    color: colour.$pink;
     margin-bottom: 2rem;
+  }
+
+  a {
+    color: colour.$light;
+    margin-top: 0.625rem;
+    display: inline-block;
   }
 }
