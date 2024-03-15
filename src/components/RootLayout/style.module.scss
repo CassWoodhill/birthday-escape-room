@@ -5,14 +5,16 @@
 
 .root-layout {
   padding: 1.5rem;
-  height: 100vh;
+  min-height: 100vh;
   flex-direction: column;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .main {
   background: colour.$dark;
-  max-width: 100%;
+  flex-shrink: 1;
+  width: 100%;
 }

@@ -23,11 +23,9 @@ const NavListItem: React.FC<NavListItemProps> = (props) => {
 export const RootLayout: React.FC = () => {
   return (
     <div className={css["root-layout"]}>
-      <div className={css["root-layout-body"]}>
-        <main className={css.main}>
-          <Outlet />
-        </main>
-      </div>
+      <main className={css.main}>
+        <Outlet />
+      </main>
     </div>
   );
 };

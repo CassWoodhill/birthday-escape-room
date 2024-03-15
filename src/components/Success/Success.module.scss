@@ -3,8 +3,7 @@
 
 .success {
   h1 {
-    @include mix.text-shadow(colour.$green-dark, 1px);
-    color: colour.$green;
+    color: colour.$light;
     margin-bottom: 2rem;
   }
 }

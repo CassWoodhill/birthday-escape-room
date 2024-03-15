@@ -18,17 +18,17 @@ export function Home() {
   return (
     <div className={css.home}>
       <div className={css.welcome}>
-        <h1>Where is Cass?</h1>
+        <h1>Save the cake!</h1>
         <p>
-          Can you find me?
-        </p>
-        <p>
-          Put in the correct code sequence once you're confident you've found all the clues.
+          Oh no! Buddy the dinosaur is loose and hungry. Save the birthday cake from his clutches
         </p>
       </div>
+      <p>
+        Put in the correct 5 digit code once you've found them all.
+      </p>
       <div className={css["answer-inputs"]}>
         <form onSubmit={submitAnswer}>
-          <label htmlFor="the-answer">What is the code sequence?</label>
+          <label htmlFor="the-answer">Code sequence?</label>
           <input
             id="the-answer"
             onChange={(

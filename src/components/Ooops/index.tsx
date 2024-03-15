@@ -6,9 +6,9 @@ export const Ooops: React.FC = () => {
     <div className={css.oops}>
       <h1>Not quite!</h1>
       <p>
-        That wasn't the answer, try again
+        That wasn't the answer,
+        <Link to="/">go back and try again</Link>
       </p>
-      <Link to="/">Go back and try again</Link>
     </div>
   );
 };
